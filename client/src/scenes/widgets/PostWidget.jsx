@@ -9,7 +9,7 @@ import { setPost } from "state";
 
 const PostWidget = ({ 
                 postId,
-                PostUserId,
+                postUserId,
                 name,
                 description,
                 location,
@@ -45,7 +45,7 @@ const PostWidget = ({
     return (
       <WidgetWrapper m="2rem 0">
         <Friend
-          friendId={PostUserId}
+          friendId={postUserId}
           name={name}
           subtitle={location}
           userPicturePath={userPicturePath}

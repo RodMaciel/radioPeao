@@ -4,7 +4,7 @@ import {
   LocationOnOutlined,
   WorkOutlineOutlined,
 } from "@mui/icons-material";
-import { Box,Typography, Divider, useTheme } from "@mui/material";
+import { Box, Typography, Divider, useTheme } from "@mui/material";
 import UserImage from "components/UserImage";
 import FlexBetween from "components/FlexBetween";
 import WidgetWrapper from "components/WidgetWrapper";
@@ -12,7 +12,7 @@ import { useSelector } from "react-redux";
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-const UserWidget = ({ userId, picturePath}) => {
+const UserWidget = ({ userId, picturePath }) => {
   const [user, setUser] = useState(null);
   const { palette } = useTheme();
   const navigate = useNavigate();
@@ -48,11 +48,9 @@ const UserWidget = ({ userId, picturePath}) => {
     friends,
   } = user;
 
-  const friendsCount = friends && Array.isArray(friends) ? friends.length : 0;
-
   return (
     <WidgetWrapper>
-      {/* First ROW */}
+      {/* FIRST ROW */}
       <FlexBetween
         gap="0.5rem"
         pb="1.1rem"
@@ -74,7 +72,7 @@ const UserWidget = ({ userId, picturePath}) => {
             >
               {firstName} {lastName}
             </Typography>
-            <Typography color={medium}>{friendsCount} friends</Typography>
+            <Typography color={medium}>{friends.length} friends</Typography>
           </Box>
         </FlexBetween>
         <ManageAccountsOutlined />
@@ -99,13 +97,13 @@ const UserWidget = ({ userId, picturePath}) => {
       {/* THIRD ROW */}
       <Box p="1rem 0">
         <FlexBetween mb="0.5rem">
-          <Typography color={medium}> Quem viu o seu perfil</Typography>
+          <Typography color={medium}>Who's viewed your profile</Typography>
           <Typography color={main} fontWeight="500">
             {viewedProfile}
           </Typography>
         </FlexBetween>
         <FlexBetween>
-          <Typography color={medium}> Impressões do seu post.</Typography>
+          <Typography color={medium}>Impressions of your post</Typography>
           <Typography color={main} fontWeight="500">
             {impressions}
           </Typography>
@@ -151,4 +149,3 @@ const UserWidget = ({ userId, picturePath}) => {
 };
 
 export default UserWidget;
-
