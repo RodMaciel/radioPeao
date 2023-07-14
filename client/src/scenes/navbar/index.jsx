@@ -44,7 +44,7 @@ const Navbar = () => {
 //   lastName: "Doe"
 // };
 
-    const fullName = `${user.firstName} ${user.lastName}`;
+    const fullName = `${user?.firstName} ${user?.lastName}`;
 
 
 
