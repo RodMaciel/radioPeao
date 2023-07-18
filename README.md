@@ -8,4 +8,4 @@ use npm install na pasta client e na pasta Server!
 
 nos dois diretorios.
 
-Open [http://localhost:4000](http://localhost:4000) to view it in your browser.
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
