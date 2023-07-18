@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon index.js",
-    "build" : "npm install"
+    "build": "npm install"
   },
   "keywords": [],
   "author": "",
@@ -25,5 +25,8 @@
     "morgan": "^1.10.0",
     "multer-gridfs-storage": "^5.0.2"
   },
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
 }
