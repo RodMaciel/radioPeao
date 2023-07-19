@@ -24,14 +24,14 @@ const Friend = ({ friendId, name, subtitle, userPicturePath,}) => {
 
     const patchFriend = async () => {
         const response = await fetch(
-            `http://localhost:4000/users/${_id}/${friendId}`,
-            {
-                method:"PATCH",
-                headers: {
-                    Authorization: `Bearer ${token}`,
-                    "Content-Type": "application/json"
-                }
-            }
+          `https://crudnode-hvkv.onrender.com/users/${_id}/${friendId}`,
+          {
+            method: "PATCH",
+            headers: {
+              Authorization: `Bearer ${token}`,
+              "Content-Type": "application/json",
+            },
+          }
         );
         const data = await response.json();
         dispatch(setFriends({friends: data }))

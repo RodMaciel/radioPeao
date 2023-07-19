@@ -64,12 +64,11 @@ const Form = () => {
         formData.append('picturePath', values.picture.name);
 
         const savedUserResponse = await fetch(
-            "http://localhost:4000/auth/register",
-            {
-                method:"POST",
-                body: formData,
-
-            }
+          "https://crudnode-hvkv.onrender.com/auth/register",
+          {
+            method: "POST",
+            body: formData,
+          }
         );
         const savedUser = await savedUserResponse.json();
         onSubmitProps.resetForm();
