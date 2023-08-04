@@ -2,6 +2,7 @@
 # SOCIALMedia app
 
 use npm install na pasta Client e na pasta Server!
+
 Conta pra teste criada: fake@fake.com / senha: fake123
 
 ## Stack utilizada
