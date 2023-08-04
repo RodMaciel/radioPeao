@@ -60,4 +60,3 @@ Inicie o servidor
 
 https://radiopeao.netlify.app/
 
-<img src="https://prnt.sc/pE9SWKu9Ulss">
