@@ -1,15 +1,63 @@
-# radioPeao
 
-use npm install na pasta client e na pasta Server!
+# SOCIALMedia app
 
-### `npm install'
+use npm install na pasta Client e na pasta Server!
 
-### `npm run start` 
+## Stack utilizada
 
-nos dois diretorios.
+**Front-end:** React, Redux, MUI, React Router, Redux
 
-<<<<<<< HEAD
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-=======
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
->>>>>>> 3ede6120543c81a1dfea589eb275ead8e6ffa554
+**Back-end:** Node, Express, MongoDB, Nodemon, JsonWebToken
+
+
+## Instalação
+
+Instale client e server com npm
+
+```bash
+  cd server
+  npm install
+```
+```bash
+  cd client
+  npm install
+  npm start
+```
+    
+## Autores
+
+- [@RodMaciel](https://www.github.com/RodMaciel)
+
+
+## Rodando localmente
+
+Clone o projeto
+
+```bash
+  git clone https://link-para-o-projeto
+```
+
+Entre no diretório do projeto
+
+```bash
+  cd client
+```
+
+Instale as dependências
+
+```bash
+  npm install
+```
+
+Inicie o servidor
+
+```bash
+  npm run start
+```
+
+
+## Demonstração
+
+https://radiopeao.netlify.app/
+
+<img src="https://prnt.sc/pE9SWKu9Ulss">
